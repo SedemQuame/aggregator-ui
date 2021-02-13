@@ -1,27 +1,42 @@
-function VerticalCard() {
+import React from 'react';
+import './../StoryComponents.css';
+import Skeleton from 'react-loading-skeleton';
+
+function formatImageUrl(imageString) {
+    if (imageString !== undefined) {
+        return imageString;
+    }
+    return "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAA1BMVEWpqamhHEfZAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIALA8UNAAFusnLHAAAAAElFTkSuQmCC";
+}
+
+export default (props) => {
+    let imageView;
+
+    if (props.article.image && (props.type !== 'loader')) {
+        imageView = <img src={formatImageUrl(props.article.image)}
+                         className="card-img-top"
+                         style={{borderTopLeftRadius: 0, borderTopRightRadius: 0}}
+                         alt="" loading="lazy"/>
+    }else{
+        let skeletonStyle = {
+          width: 1000,
+          height: 1000
+        };
+        imageView = <Skeleton style={skeletonStyle}/>
+    }
+
     return (
         <>
             {/*begin post*/}
             <div className="card">
-                <a href="post.html">
-                    <img className="img-fluid"
-                         src="https://images.unsplash.com/photo-1600456899121-68eda5705257?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=825&q=80"
-                         alt=""/>
-                </a>
+                <div className="img-container">{imageView}</div>
                 <div className="card-block">
-                    <h2 className="card-title">
-                        <a href="/post">10 Things you should know about choosing your house</a>
-                    </h2>
-                    <h4 className="card-text">
-                        This is a longer card with supporting text below as a natural
-                        lead-in to additional content. This content is a little bit longer.
-                    </h4>
-
+                    <h3 className="card-title article-header">
+                        {props.article.title || <Skeleton/>}
+                    </h3>
                 </div>
             </div>
             {/*end post*/}
         </>
     );
 }
-
-export default VerticalCard

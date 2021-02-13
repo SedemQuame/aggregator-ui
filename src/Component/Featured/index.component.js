@@ -2,6 +2,12 @@ import HorizontalCards from "../Cards/Horizontal/index.component";
 import './../../index.css';
 
 function Featured() {
+
+    let doc = {
+        header: "Story name",
+        subHeader: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        images: ["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAA1BMVEWpqamhHEfZAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIALA8UNAAFusnLHAAAAAElFTkSuQmCC"]
+    }
     return (
         <>
             {/*Begin Featured*/}
@@ -11,10 +17,10 @@ function Featured() {
                 </div>
 
                 <div className="card-columns listfeaturedtag">
-                    <HorizontalCards/>
-                    <HorizontalCards/>
-                    <HorizontalCards/>
-                    <HorizontalCards/>
+                    <HorizontalCards article={doc}/>
+                    <HorizontalCards article={doc}/>
+                    <HorizontalCards article={doc}/>
+                    <HorizontalCards article={doc}/>
                 </div>
             </section>
             {/*End Featured*/}

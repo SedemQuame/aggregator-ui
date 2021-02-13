@@ -1,13 +1,16 @@
 import {Link} from 'react-router-dom';
 import './../../index.css';
 import logo from './../../assets/img/logo.png'
+import Category from './../../Pages/Category/index.component';
 
 export default () => {
         return (
             <>
                 <nav className="navbar navbar-expand-lg navbar-light fixed-top bg-white mediumnavigation">
                     <div className="container">
-                        <Link to="/" className="navbar-brand">
+                        <Link to={{
+                            pathname: "/"
+                        }} className="navbar-brand">
                             <img src={logo} alt="logo"/>
                         </Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -18,22 +21,58 @@ export default () => {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <Link to="/entertainment" className="nav-link">Entertainment</Link>
+                                    <Link to={{
+                                        pathname: '/entertainment',
+                                        state: {
+                                            name: 'Entertainment',
+                                            endpoint: '/Entertainment?page=1'
+                                        }
+                                    }} className="nav-link">Entertainment</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/sports" className="nav-link">Sports</Link>
+                                    <Link to={{
+                                        pathname: '/sports',
+                                        state: {
+                                            name: 'Sports',
+                                            endpoint: '/Sports?page=1'
+                                        }
+                                    }} className="nav-link">Sports</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/lifestyle" className="nav-link">Lifestyle</Link>
+                                    <Link to={{
+                                        pathname: '/lifestyle',
+                                        state: {
+                                            name: 'LifeStyle',
+                                            endpoint: '/Lifestyle?page=1'
+                                        }
+                                    }} className="nav-link">Lifestyle</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/viral" className="nav-link">Viral</Link>
+                                    <Link to={{
+                                        pathname: '/viral',
+                                        state: {
+                                            name: 'Viral',
+                                            endpoint: '/Viral?page=1'
+                                        }
+                                    }} className="nav-link">Viral</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/business" className="nav-link">Business</Link>
+                                    <Link to={{
+                                        pathname: '/business',
+                                        state: {
+                                            name: 'Business',
+                                            endpoint: '/Business?page=1'
+                                        }
+                                    }}  className="nav-link">Business</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/politics" className="nav-link">Politics</Link>
+                                    <Link to={{
+                                        pathname: '/politics',
+                                        state: {
+                                            name: 'Politics',
+                                            endpoint: '/Politics?page=1'
+                                        }
+                                    }} className="nav-link">Politics</Link>
                                 </li>
                             </ul>
                             <form className="d-flex">

@@ -1,23 +1,45 @@
-function HorizontalCards() {
+import Skeleton from 'react-loading-skeleton';
+
+function formatImageUrl(imageString) {
+    if (imageString !== undefined) {
+        return imageString;
+    }
+    return "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAA1BMVEWpqamhHEfZAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIALA8UNAAFusnLHAAAAAElFTkSuQmCC";
+}
+
+function HorizontalCards(props) {
+    let imageView;
+
+    if (props.article.images[0] && (props.type !== 'loader')) {
+        imageView = <img src={formatImageUrl(props.article.images[0])}
+                         className="card-img-top"
+                         style={{borderTopLeftRadius: 0, borderTopRightRadius: 0}}
+                         alt="" loading="lazy"/>
+    }else{
+        let skeletonStyle = {
+            width: 1000,
+            height: 1000
+        };
+        imageView = <Skeleton style={skeletonStyle}/>
+    }
     return (
         <>
             {/*begin post */}
-            <div class="card">
-                <div class="row">
-                    <div class="col-md-5 wrapthumbnail">
-                        <a href="post.html">
-                            <div class="thumbnail"
-                                 style={{backgroundImage: `url("https://images.unsplash.com/photo-1585314062604-1a357de8b000?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80")`}}>
-                            </div>
-                        </a>
+            <div className="card">
+                <div className="row">
+                    <div className="col-md-5 wrapthumbnail">
+                        <div className="thumbnail">
+                            {imageView}
+                        </div>
                     </div>
-                    <div class="col-md-7">
-                        <div class="card-block">
-                            <h2 class="card-title">
-                                <a href="/post">We're living some strange times</a>
+                    <div className="col-md-7">
+                        <div className="card-block">
+                            <h2 className="card-title">
+                                {props.article.header || <Skeleton/>}
                             </h2>
-                            <h4 class="card-text">This is a longer card with supporting text below as a natural
-                                lead-in to additional content. This content is a little bit longer.</h4>
+                            <h4 className="card-text">
+                                {props.article.subHeader || <Skeleton/>}
+                            </h4>
                         </div>
                     </div>
                 </div>

@@ -1,11 +1,8 @@
-export default () => {
+export default (props) => {
     return (
         <div className="after-post-tags">
             <ul className="tags">
-                <li><a href="#">Design</a></li>
-                <li><a href="#">Growth Mindset</a></li>
-                <li><a href="#">Productivity</a></li>
-                <li><a href="#">Personal Growth</a></li>
+                <li><a href="#">{props.category || "Viral News"}</a></li>
             </ul>
         </div>
     );
