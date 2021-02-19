@@ -3,13 +3,13 @@ import VerticalCard from "../Cards/Vertical/index.component";
 import {Link} from "react-router-dom";
 import Pagination from './../Pagination/index.component';
 
-function Story(props) {
+function Politics(props) {
     const [data, setData] = useState();
     const [error, setError] = useState();
 
     useEffect(() => {
-        let CORS = `https://cors-anywhere.herokuapp.com/`;
-        let server = `https://aggregatrserver.herokuapp.com/get/category${props.location.state.endpoint}?limit=60`;
+        let CORS = `https://api.allorigins.win/raw?url=`;
+        let server = `https://aggregatrserver.herokuapp.com/get/category${props.location.state.endpoint}?limit=100`;
         try {
             fetch(`${CORS}${server}`)
                 .then(data => data.json())
@@ -48,4 +48,4 @@ function Story(props) {
     );
 }
 
-export default Story;
+export default Politics;

@@ -2,34 +2,107 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="782c6c3e-2979-46df-88dc-5cd09a4147fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Component/Cards/StoryComponents.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Loader/index.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Pagination/index.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Stories/business.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Stories/entertainment.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Stories/lifestyle.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Stories/politics.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Stories/sports.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Stories/viral.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/Category/index.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Loader/featured/index.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-script/BrownGh/scraper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-script/BrownGh/strategy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-script/EOnlineGh/scraper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-script/EOnlineGh/strategy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-script/PeaceFmOnline/scraper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-script/PeaceFmOnline/strategy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-script/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-script/requirement.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-script/site-profiles/BrownGh.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-script/site-profiles/EOnlineGh.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-script/site-profiles/Fifty7Tech.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-script/site-profiles/GhHeadLines.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-script/site-profiles/Mfidie.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-script/site-profiles/PeacefmOnline.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/.eslintcache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/public/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/public/assets/js/ie10-viewport-bug-workaround.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/public/assets/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/public/assets/js/mediumish.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/AlertBar/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Banner/banner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Banner/image.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Banner/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Cards/Author/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Cards/Horizontal/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Cards/StoryComponents.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Cards/Vertical/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Cards/Vertical/related_articles.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Featured/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Footer/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/HideShare/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Loader/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/MainHeading/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Nav/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Nav/nav.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Paragraphs/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/RelatedPosts/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Socials/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Stories/business.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Stories/entertainment.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Stories/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Stories/lifestyle.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Stories/politics.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Stories/sports.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Stories/viral.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Component/Tags/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Pages/Category/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Pages/Home/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/Pages/Post/index.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/assets/img/default-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/assets/img/demopic/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/assets/img/demopic/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/assets/img/demopic/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/assets/img/demopic/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/assets/img/demopic/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/assets/img/demopic/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/assets/img/demopic/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/assets/img/demopic/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/assets/img/demopic/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/assets/img/demopic/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/assets/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aggregator-ui/yarn.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Banner/image.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Banner/image.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Banner/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Banner/index.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Cards/Horizontal/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Cards/Horizontal/index.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Cards/Vertical/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Cards/Vertical/index.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Featured/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Featured/index.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/MainHeading/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/MainHeading/index.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Loader/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Loader/category/index.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Nav/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Nav/index.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Paragraphs/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Paragraphs/index.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Story/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Stories/index.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Tags/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Tags/index.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Stories/business.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Stories/business.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Stories/entertainment.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Stories/entertainment.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Stories/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Stories/index.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Stories/lifestyle.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Stories/lifestyle.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Stories/politics.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Stories/politics.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Stories/sports.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Stories/sports.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Stories/viral.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Stories/viral.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Category/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Category/index.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Home/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home/index.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Post/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Post/index.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +120,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1nhxJQX0FANjmDFCO4ee8mlJhLH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -58,7 +132,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Pages/Category" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -77,11 +151,17 @@
       <recent name="$PROJECT_DIR$/src/assets/css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Component/Loader/category" />
       <recent name="$PROJECT_DIR$/src/Component/Stories" />
       <recent name="$PROJECT_DIR$/src/Pages/Category" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="npm run start" />
+    </option>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -104,11 +184,28 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="JavaScript Debug.Debug Application" />
       <item itemvalue="npm.npm start" />
       <item itemvalue="npm.npm build" />
+      <item itemvalue="npm.start" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -131,7 +228,17 @@
       <workItem from="1613009002013" duration="1030000" />
       <workItem from="1613031996185" duration="6598000" />
       <workItem from="1613089358560" duration="1695000" />
-      <workItem from="1613196485297" duration="17891000" />
+      <workItem from="1613196485297" duration="18938000" />
+      <workItem from="1613232965935" duration="2498000" />
+      <workItem from="1613255280631" duration="19360000" />
+      <workItem from="1613294968232" duration="9043000" />
+      <workItem from="1613340019998" duration="912000" />
+      <workItem from="1613378000992" duration="364000" />
+      <workItem from="1613429261703" duration="3257000" />
+      <workItem from="1613465407581" duration="744000" />
+      <workItem from="1613598565091" duration="2348000" />
+      <workItem from="1613650714372" duration="2133000" />
+      <workItem from="1613688474956" duration="7766000" />
     </task>
     <servers />
   </component>

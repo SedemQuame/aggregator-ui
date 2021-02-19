@@ -1,5 +1,5 @@
-import Skeleton from 'react-loading-skeleton';
-
+import ReactPlaceholder from 'react-placeholder';
+import "react-placeholder/lib/reactPlaceholder.css";
 function formatImageUrl(imageString) {
     if (imageString !== undefined) {
         return imageString;
@@ -9,42 +9,31 @@ function formatImageUrl(imageString) {
 
 function HorizontalCards(props) {
     let imageView;
-
-    if (props.article.images[0] && (props.type !== 'loader')) {
-        imageView = <img src={formatImageUrl(props.article.images[0])}
+    if (props.article.image) {
+        imageView = <img src={formatImageUrl(props.article.image)}
                          className="card-img-top"
                          style={{borderTopLeftRadius: 0, borderTopRightRadius: 0}}
                          alt="" loading="lazy"/>
-    }else{
-        let skeletonStyle = {
-            width: 1000,
-            height: 1000
-        };
-        imageView = <Skeleton style={skeletonStyle}/>
     }
     return (
         <>
-            {/*begin post */}
             <div className="card">
                 <div className="row">
                     <div className="col-md-5 wrapthumbnail">
-                        <div className="thumbnail">
-                            {imageView}
-                        </div>
+                        <ReactPlaceholder showLoadingAnimation={true} type='rect' ready={props.isReady} color='#E0E0E0'>
+                            <div className="img-container">{imageView}</div>
+                        </ReactPlaceholder>
                     </div>
                     <div className="col-md-7">
                         <div className="card-block">
-                            <h2 className="card-title">
-                                {props.article.header || <Skeleton/>}
-                            </h2>
-                            <h4 className="card-text">
-                                {props.article.subHeader || <Skeleton/>}
-                            </h4>
+                            <ReactPlaceholder showLoadingAnimation={true} type='text' ready={props.isReady} rows={2} color='#E0E0E0'>
+                                <h2 className="card-title">{props.article.title}</h2>
+                                <h4 className="card-text">{props.article.paragraphs[0]}</h4>
+                            </ReactPlaceholder>
                         </div>
                     </div>
                 </div>
             </div>
-            {/*end post */}
         </>
     );
 }

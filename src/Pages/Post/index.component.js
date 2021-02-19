@@ -4,11 +4,11 @@ import BannerImage from './../../Component/Banner/image.component';
 import Paragraph from './../../Component/Paragraphs/index.component';
 import Tags from './../../Component/Tags/index.component';
 import HideShare from './../../Component/HideShare/index.component';
-import RelatedPosts from './../../Component/RelatedPosts/index.component';
 import AlertBar from './../../Component/AlertBar/index.component';
 import Footer from './../../Component/Footer/index.component';
+// import RelatedPosts from './../../Component/RelatedPosts/index.component';
 
-export default (props) => {
+function Posts (props){
     return (
         <>
             <div className="container">
@@ -35,3 +35,5 @@ export default (props) => {
         </>
     );
 }
+
+export default Posts;
