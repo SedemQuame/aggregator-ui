@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Pagination from './../Pagination/index.component';
 import Story from "./index.component";
+import Empty from "../Empty/index.component";
 
 function Viral(props) {
     const [data, setData] = useState();
@@ -8,16 +9,15 @@ function Viral(props) {
     const [ready, setReady] = useState(false);
 
     useEffect(() => {
-        let CORS = `https://cors-anywhere.herokuapp.com/`;
         let server = `https://aggregatrserver.herokuapp.com/get/category${props.location.state.endpoint}?limit=100`;
-        fetch(`${CORS}${server}`)
+        fetch(`${server}`)
             .then(data => data.json())
             .then(result => setData(result))
             .catch(setError);
         setReady(true);
     }, [props.location.state.endpoint]);
     if (error) return (<pre>{JSON.stringify(error)}</pre>)
-    if (!data) return null;
+    if (!data) return <Empty hasBanner={false} category={"Viral"}/>;
 
     let paginator;
     if (data["articles"]["hasPrevPage"] || data["articles"]["hasNextPage"]) {
@@ -29,8 +29,7 @@ function Viral(props) {
 
     return (
         <>
-            {/*<p>{JSON.stringify(data)}</p>*/}
-            <Story name="Viral" storyDocs={data["articles"]["docs"]} isReady={ready} hasPaginator={paginator}/>
+            <Story name="Viral" storyDocs={data["articles"]} isReady={ready} hasPaginator={paginator}/>
         </>
     );
 }

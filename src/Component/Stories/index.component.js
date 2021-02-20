@@ -8,7 +8,7 @@ function Story(props) {
         textDecoration: 'none',
         color: 'black'
     };
-    let pageContent = props.storyDocs.map(article => <Link key={article["_id"]} style={linkStyle} to={
+    let pageContent = props.storyDocs["docs"].map(article => <Link key={article["_id"]} style={linkStyle} to={
             {
                 pathname: "post",
                 state: {
@@ -28,9 +28,6 @@ function Story(props) {
                                 hasNextPage={props.storyDocs["hasNextPage"]}/>
     }
 
-    let docs = {
-        images: ["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAA1BMVEWpqamhHEfZAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIALA8UNAAFusnLHAAAAAElFTkSuQmCC"]
-    }
     return (
         <>
             <section className="recent-posts">
@@ -38,9 +35,7 @@ function Story(props) {
                     <h2><span>{props.name}</span></h2>
                 </div>
                 <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 listrecent">
-                    {(props.isReady) ? pageContent : Array(24).fill().map((element, index) => <VerticalCard key={index}
-                                                                                                            article={docs}
-                                                                                                            ready={false}/>)}
+                    {pageContent}
                 </div>
                 {paginator}
             </section>

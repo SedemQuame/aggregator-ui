@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="782c6c3e-2979-46df-88dc-5cd09a4147fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Component/Loader/featured/index.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Cards/Horizontal/empty.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Cards/Vertical/empty.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Empty/index.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../aggregator-script/BrownGh/scraper.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../aggregator-script/BrownGh/strategy.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../aggregator-script/EOnlineGh/scraper.py" beforeDir="false" />
@@ -81,17 +83,11 @@
       <change beforePath="$PROJECT_DIR$/../aggregator-ui/src/logo.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../aggregator-ui/yarn.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Banner/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Banner/index.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Cards/Horizontal/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Cards/Horizontal/index.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Cards/Vertical/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Cards/Vertical/index.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Featured/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Featured/index.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Loader/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Loader/category/index.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Nav/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Nav/index.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Paragraphs/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Paragraphs/index.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Stories/business.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Stories/business.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Stories/entertainment.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Stories/entertainment.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Stories/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Stories/index.component.js" afterDir="false" />
@@ -99,11 +95,9 @@
       <change beforePath="$PROJECT_DIR$/src/Component/Stories/politics.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Stories/politics.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Stories/sports.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Stories/sports.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Stories/viral.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Stories/viral.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Category/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Category/index.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Home/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home/index.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Post/index.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Post/index.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +157,7 @@
       <command value="npm run start" />
     </option>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="npm.npm build">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -238,7 +232,9 @@
       <workItem from="1613465407581" duration="744000" />
       <workItem from="1613598565091" duration="2348000" />
       <workItem from="1613650714372" duration="2133000" />
-      <workItem from="1613688474956" duration="7766000" />
+      <workItem from="1613688474956" duration="8317000" />
+      <workItem from="1613756353536" duration="10273000" />
+      <workItem from="1613809913795" duration="15206000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom';
 import './../../index.css';
 import logo from './../../assets/img/logo.png'
 
-export default () => {
+function Nav (){
         return (
             <>
                 <nav className="navbar navbar-expand-lg navbar-light fixed-top bg-white mediumnavigation">
@@ -37,16 +37,15 @@ export default () => {
                                         }
                                     }} className="nav-link">Sports</Link>
                                 </li>
-                                {/*<li className="nav-item">*/}
-                                {/*    <Link to={{*/}
-                                {/*        pathname: '/lifestyle',*/}
-                                {/*        state: {*/}
-                                {/*            name: 'Lifestyle',*/}
-                                {/*            endpoint: '/Lifestyle?page=1'*/}
-                                {/*        }*/}
-                                {/*    }} className="nav-link">Lifestyle</Link>*/}
-                                {/*</li>*/}
-
+                                <li className="nav-item">
+                                    <Link to={{
+                                        pathname: '/lifestyle',
+                                        state: {
+                                            name: 'Lifestyle',
+                                            endpoint: '/Lifestyle?page=1'
+                                        }
+                                    }} className="nav-link">Lifestyle</Link>
+                                </li>
                                 {/*<li className="nav-item">*/}
                                 {/*    <Link to={{*/}
                                 {/*        pathname: '/business',*/}
@@ -78,7 +77,7 @@ export default () => {
                             <form className="d-flex">
                                 <input className="form-control me-2" type="search" placeholder="Search"
                                        aria-label="Search"/>
-                                    <button className="btn btn-outline-success" type="submit">Search</button>
+                                    <button className="btn btn-success" type="submit">Search</button>
                             </form>
                         </div>
                     </div>
@@ -86,3 +85,5 @@ export default () => {
             </>
         );
 }
+
+export default Nav;

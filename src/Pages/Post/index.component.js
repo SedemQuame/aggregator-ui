@@ -19,7 +19,7 @@ function Posts (props){
                     <div className="col-md-8 col-md-offset-2 col-xs-12">
                         <MainHeading title={props.location.state.article.title}/>
                         <BannerImage image={props.location.state.article.image}/>
-                        <Paragraph paragraphs={props.location.state.article.paragraphs}/>
+                        <Paragraph paragraphs={props.location.state.article.paragraphs.filter(paragraph => (paragraph != null)).filter(paragraph => (paragraph !== ""))}/>
                         <Tags category={props.location.state.article.category}/>
                     </div>
                 </div>
