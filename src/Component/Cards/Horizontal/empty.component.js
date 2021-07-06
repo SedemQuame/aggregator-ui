@@ -5,15 +5,17 @@ import React from "react";
 function EmptyHorizontalCards() {
     return (
         <>
-            <div className="col">
-                <div className="card">
+            <div className="col-12 col-md-6 col-lg-4">
+                <div className="card horizontal-card">
                     <div className="row">
-                        <div className="col-md-5 wrapthumbnail">
-                            <ReactPlaceholder type='rect' showLoadingAnimation={true} ready={false} color='#E0E0E0' style={{ width: "100%", height: "70%" }}/>
+                        <div className="col-4">
+                            <ReactPlaceholder type='rect' showLoadingAnimation={true} ready={false} color='#E0E0E0'
+                                              style={{height: "100px", width: "100%"}}/>
                         </div>
-                        <div className="col-md-7">
+                        <div className="col-8" style={{padding: "4px 0"}}>
                             <div className="card-block">
-                                <ReactPlaceholder type='text' showLoadingAnimation={true} ready={false} rows={4} color='#E0E0E0'/>
+                                <ReactPlaceholder type='text' showLoadingAnimation={true} ready={false} rows={3}
+                                                  color='#E0E0E0' style={{width: "90%"}}/>
                             </div>
                         </div>
                     </div>

@@ -8,7 +8,7 @@ function Footer() {
                     Copyright &copy; 2021 K
                 </p>
                 <p className="pull-right">
-                    Mediumish Theme by <a target="_blank" href="https://www.wowthemes.net">WowThemes.net</a>
+                    Mediumish Theme by <a target="_blank" rel="noreferrer" href="https://www.wowthemes.net">WowThemes.net</a>
                 </p>
                 <div className="clearfix">
                 </div>

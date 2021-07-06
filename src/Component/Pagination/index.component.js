@@ -1,90 +1,64 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 
 function Pagination(props) {
     let prevPage, nextPage, previousPages, nextPages;
     if (props.hasPrevPage) {
-        prevPage = <li className="page-item">
-            <Link to={{
-                pathname: props.pathname,
-                state: {
-                    name: props.name,
-                    endpoint: `/${props.endpoint}?page=${props.page - 1}`
-                }
-            }} className="page-link">Previous</Link>
-        </li>
+        prevPage =
+            <button className="page-item btn"
+                    onClick={() => {props.onPaginatorClick(`${props.endpoint}?limit=${90 * (props.page - 1)}`)}}>
+                Previous
+            </button>
         if ((props.page - 2) < 0) {
             previousPages = <>
-                <li className="page-item"><Link to={{
-                    pathname: props.pathname,
-                    state: {
-                        name: props.name,
-                        endpoint: `/${props.endpoint}?page=${props.page - 1}`
-                    }
-                }} className="page-link">{props.page - 1}</Link></li>
-                <li className="page-item"><Link to={{
-                    pathname: props.pathname,
-                    state: {
-                        name: props.name,
-                        endpoint: `/${props.endpoint}?page=${props.page - 2}`
-                    }
-                }} className="page-link">{props.page - 2}</Link></li>
+                <button className="page-item btn"
+                        onClick={() => {props.onPaginatorClick(`${props.endpoint}?limit=${90 * (props.page - 1)}`)}}>
+                    {props.page - 1}
+                </button>
+                <button className="page-item btn"
+                        onClick={() => {props.onPaginatorClick(`${props.endpoint}?limit=${90 * (props.page - 2)}`)}}>
+                    {props.page - 2}
+                </button>
             </>
         }
     }
 
     if (props.hasNextPage) {
-        nextPage = <li className="page-item"><Link to={{
-            pathname: props.pathname,
-            state: {
-                name: props.name,
-                endpoint: `/${props.endpoint}?page=${props.page + 1}`
-            }
-        }} className="page-link">Next</Link></li>
-        if ((props.page + 3) < props.totalPages) {
+        nextPage =
+            <button className="page-item btn"
+                    onClick={() => {props.onPaginatorClick(`${props.endpoint}?limit=${90 * (props.page + 1)}`)}}>
+                Next
+            </button>
+        if ((props.page + 1) <= props.totalPages) {
             nextPages = <>
-                <li className="page-item"><Link to={{
-                    pathname: props.pathname,
-                    state: {
-                        name: props.name,
-                        endpoint: `/${props.endpoint}?page=${props.page + 1}`
-                    }
-                }} className="page-link">{props.page + 1}</Link></li>
-                <li className="page-item"><Link to={{
-                    pathname: props.pathname,
-                    state: {
-                        name: props.name,
-                        endpoint: `/${props.endpoint}?page=${props.page + 2}`
-                    }
-                }} className="page-link">{props.page + 2}</Link></li>
-                <li className="page-item"><Link to={{
-                    pathname: props.pathname,
-                    state: {
-                        name: props.name,
-                        endpoint: `/${props.endpoint}?page=${props.page + 3}`
-                    }
-                }} className="page-link">{props.page + 3}</Link></li>
+                <button className="page-item btn"
+                        onClick={() => {props.onPaginatorClick(`${props.endpoint}?limit=${90 * (props.page + 1)}`)}}>
+                    {props.page + 1}
+                </button>
+                <button className="page-item btn"
+                        onClick={() => {props.onPaginatorClick(`${props.endpoint}?limit=${90 * (props.page + 2)}`)}}>
+                    {props.page + 2}
+                </button>
+                <button className="page-item btn"
+                        onClick={() => {props.onPaginatorClick(`${props.endpoint}?limit=${90 * (props.page + 3)}`)}}>
+                    {props.page + 3}
+                </button>
             </>
         }
     }
+
     return (
         <>
             <div className="after-post-tags d-flex justify-content-center">
                 <ul className="tags">
                     <nav aria-label="Page navigation example">
-                        <ul className="pagination">
-                            {prevPage}
-                            {previousPages}
-                            <li className="page-item active"><Link to={{
-                                pathname: props.pathname,
-                                state: {
-                                    name: props.name,
-                                    endpoint: `/${props.endpoint}?page=${props.page}`
-                                }
-                            }} className="page-link">{props.page}</Link></li>
-                            {nextPages}
-                            {nextPage}
-                        </ul>
+                        {prevPage}
+                        {previousPages}
+                        <button className="page-item btn btn-dark active">
+                                {/*onClick={props.onPaginatorClick(`${props.endpoint}?limit=${90 * props.page}`)}>*/}
+                            {props.page}
+                        </button>
+                        {nextPages}
+                        {nextPage}
                     </nav>
                 </ul>
             </div>

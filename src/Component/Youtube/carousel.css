@@ -1,0 +1,23 @@
+.yt_carousel {
+    height: 500px;
+}
+
+.yt_carousel_navigation {
+    background-color: rgba(220, 221, 225, 0.8);
+}
+
+.yt_carousel_navigation:hover {
+    background-color: rgba(220, 221, 225, 0.5);
+}
+
+@media all and (max-width: 850px) {
+    .yt_carousel {
+        height: 350px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .yt_carousel {
+        height: 250px;
+    }
+}
